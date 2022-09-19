@@ -7,6 +7,7 @@ The end result that we want is a setup where changes in your GitHub code will au
 ### Create Dockerhub Repositories
 
 Log in to https://hub.docker.com/ and create four public repositories - each repository corresponding to your local Docker images.
+  - docker --version # print the version for logging
 
 * `reverseproxy`
 * `udagram-api-user`
