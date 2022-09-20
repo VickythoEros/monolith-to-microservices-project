@@ -12,8 +12,6 @@ install:
 # Scripts to be run such as tests
 before_script:
   - echo "no tests"
-  - docker image prune -f --all 
-
 script:
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
