@@ -195,3 +195,13 @@ kubectl describe services
 # You have horizontal scaling set against CPU usage
 kubectl describe hpa
 ```
+
+
+
+kubectl set image deployment udagram-frontend udagram-frontend=vickytho/udagram-frontend:v3
+
+kubectl set image deployment udagram-reverseproxy udagram-reverseproxy=vickytho/udagram-reverseproxy:v3
+
+kubectl set image deployment udagram-api-user udagram-api-user=vickytho/udagram-api-user:v3
+
+kubectl set image deployment udagram-api-feed udagram-api-feed=vickytho/udagram-api-feed:v3
