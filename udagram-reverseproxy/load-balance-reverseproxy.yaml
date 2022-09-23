@@ -8,7 +8,7 @@ metadata:
    
     app.kubernetes.io/name: load-balancer-reverseproxy
    
-  name: udagram-reverseproxy
+  name: reverseproxy
    
 spec:
    
@@ -32,9 +32,9 @@ spec:
    
       containers:
    
-      - image: vickytho/udagram-reverseproxy
+      - image: vickytho/reverseproxy
    
-        name: udagram-reverseproxy
+        name: reverseproxy
    
         ports:
    
