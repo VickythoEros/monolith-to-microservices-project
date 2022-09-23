@@ -3,9 +3,9 @@ kind: Service
 metadata:
   labels:
     app: udagram-api-feed
-  name: udagram-api-feed-svc
+  name: udagram-api-feed
   namespace: default
-  selfLink: /api/v1/namespaces/default/services/udagram-api-feed-svc
+  selfLink: /api/v1/namespaces/default/services/udagram-api-feed
 spec:
   ports:
   - port: 8080
