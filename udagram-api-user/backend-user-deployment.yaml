@@ -5,7 +5,7 @@ metadata:
   labels:
     app: udagram-api-user
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: udagram-api-user
@@ -17,5 +17,12 @@ spec:
       containers:
       - name: udagram-api-user
         image: vickytho/udagram-api-user
+        envFrom:
+          - configMapRef:
+              name: env-configmap
+          - secretRef:
+              name: env-secret
+          - secretRef:
+              name: aws-secret
         ports:
-        - containerPort: 80
+        - containerPort: 8080
