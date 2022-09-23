@@ -15,7 +15,7 @@ spec:
         app: udagram-api-feed
     spec:
       containers:
-      - name: udagram-api-feed
+      - name:  udagram-api-feed
         image: vickytho/udagram-api-feed
         envFrom:
           - configMapRef:
@@ -23,6 +23,6 @@ spec:
           - secretRef:
               name: env-secret
           - secretRef:
-              name: aws-secret
+              name: aws-secret 
         ports:
         - containerPort: 8080
