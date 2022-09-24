@@ -7,7 +7,13 @@ cd ./udagram-reverseproxy && kubectl apply -f reverseproxy-deployment.yaml && ku
 kubectl get deployments
 
 
-#kubectl set image deployment reverseproxy reverseproxy=vickytho/reverseproxy:v3
-#kubectl set image deployment udagram-frontend udagram-frontend=vickytho/udagram-frontend:v4
-#kubectl set image deployment udagram-api-feed udagram-api-feed=vickytho/udagram-api-feed:v3
-#kubectl set image deployment udagram-api-user udagram-api-user=vickytho/udagram-api-user:v3
+#kubectl set image deployment reverseproxy reverseproxy=vickytho/reverseproxy:v7
+#kubectl set image deployment udagram-frontend udagram-frontend=vickytho/udagram-frontend:v7
+#kubectl set image deployment udagram-api-feed udagram-api-feed=vickytho/udagram-api-feed:v7
+#kubectl set image deployment udagram-api-user udagram-api-user=vickytho/udagram-api-user:v7
+
+### autoscaling
+#kubectl autoscale deployment reverseproxy --cpu-percent=50 --min=2 --max=10
+#kubectl autoscale deployment udagram-frontend --cpu-percent=50 --min=2 --max=10
+#kubectl autoscale deployment udagram-api-feed --cpu-percent=50 --min=2 --max=10
+#kubectl autoscale deployment udagram-api-user --cpu-percent=50 --min=2 --max=10
