@@ -7,7 +7,7 @@ cd ./udagram-reverseproxy && kubectl apply -f reverseproxy-deployment.yaml && ku
 kubectl get deployments
 
 
-kubectl set image deployment reverseproxy reverseproxy=vickytho/reverseproxy:v3
-kubectl set image deployment udagram-frontend udagram-frontend=vickytho/udagram-frontend:v3
-kubectl set image deployment udagram-api-feed udagram-api-feed=vickytho/udagram-api-feed:v3
-kubectl set image deployment udagram-api-user udagram-api-user=vickytho/udagram-api-user:v3
+#kubectl set image deployment reverseproxy reverseproxy=vickytho/reverseproxy:v3
+#kubectl set image deployment udagram-frontend udagram-frontend=vickytho/udagram-frontend:v4
+#kubectl set image deployment udagram-api-feed udagram-api-feed=vickytho/udagram-api-feed:v3
+#kubectl set image deployment udagram-api-user udagram-api-user=vickytho/udagram-api-user:v3
