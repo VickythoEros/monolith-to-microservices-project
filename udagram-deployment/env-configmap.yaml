@@ -8,4 +8,4 @@ data:
   AWS_BUCKET: arn:aws:s3:::vickythobucket
   AWS_REGION: us-east-1
   AWS_PROFILE: default
-  URL: http://ae9ad03db86f742a48354d15c30885cc-149501309.us-east-1.elb.amazonaws.com:8100
+  URL: http://a1f89216e8772446bb865dd413b40c2c-1833837895.us-east-1.elb.amazonaws.com:8100
